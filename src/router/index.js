@@ -1,39 +1,39 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import Dogs from '../views/Dogs.vue'
-import Cats from '../views/Cats.vue'
-import Pets from '../views/Pets.vue'
+import Vue from "vue";
+import VueRouter from "vue-router";
+import Home from "../views/Home.vue";
+import Dogs from "../views/Dogs.vue";
+import Cats from "../views/Cats.vue";
+import Pets from "../views/Pets.vue";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
+    path: "/",
+    name: "Home",
     component: Home
   },
   {
-    path: '/dogs',
-    name: 'Dogs',
+    path: "/dogs",
+    name: "Dogs",
     component: Dogs
   },
   {
-    path: '/cats',
-    name: 'Cats',
+    path: "/cats",
+    name: "Cats",
     component: Cats
   },
   {
-    path: '/pets',
-    name: 'Pets',
+    path: "/pets",
+    name: "Pets",
     component: Pets
   }
-]
+];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
   routes
-})
+});
 
-export default router
+export default router;
