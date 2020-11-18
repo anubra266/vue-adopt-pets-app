@@ -59,13 +59,18 @@ export default {
       this.showPetForm = !this.showPetForm;
     },
     handleSubmit(e) {
-      e.preventDefault()
+      e.preventDefault();
       const { species, name, age } = this.formData;
       const payload = {
         species,
         pet: { name, age }
       };
       this.addPet(payload);
+      this.formData = {
+        name: "",
+        age: 0,
+        species: null
+      };
     }
   }
 };
