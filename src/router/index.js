@@ -24,8 +24,8 @@ const routes = [
     component: Cats
   },
   {
-    path: "/pets",
-    name: "Pets",
+    path: "/pets/:id",
+    name: "Pet",
     component: Pets
   }
 ];
